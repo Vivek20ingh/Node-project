@@ -15,6 +15,7 @@ app.use(express.static('./public'))
 //firecontrolers
 
 todocontroller(app);
+const PORT = process.env.PORT || 8000;
 
-app.listen(8000);
-console.log('You are listening to port 3000');
+app.listen(PORT);
+console.log('You are listening to port 8000');
